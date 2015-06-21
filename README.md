@@ -33,4 +33,4 @@ Source this script "run_analysis.R"
 evoke the run_analysis() function.
 Example: myData<-run_analysis()
 
-The entire process is goverened by one function - a detailed description is given in codebook.md
+The entire process is governed by one function - a detailed description is given in codebook.md
