@@ -53,7 +53,7 @@ run_analysis<-function(){
     Activity <- ytest[,1]               ## get the activity identifiers for the test data set
     Activity_Type<-activityLabels[ytest[,1]]  ## make a vector of activity types using ytest as an index        
     Subject <- subjectsTest[,1]         ## get the subject identifiers to the test data set
-   ## xtest<-cbind(Activity_Type,xtest)   ## add the activity type as a new column on the left
+    ##
     xtest<-cbind(Activity,xtest)        ## add the activity index as a new column on the left
     xtest<-cbind(Subject,xtest)         ## add the subject index as a new column on the left
     ## label the xtrain set...
@@ -61,7 +61,7 @@ run_analysis<-function(){
     Activity <- ytrain[,1]              ## get the activity identifiers for the train data set 
     Activity_Type<-activityLabels[ytrain[,1]] ## make a vector of activity types using ytrain as an index
     Subject <- subjectsTrain[,1]        ## get the subject identifiers to the train data set
-    ##xtrain<-cbind(Activity_Type,xtrain) ## add the activity type as a new column on the left
+    ##
     xtrain<-cbind(Activity,xtrain)      ## add the activity index as a new column on the left
     xtrain<-cbind(Subject,xtrain)       ## add the subject index as a new column on the left
     
